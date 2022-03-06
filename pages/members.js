@@ -10,7 +10,7 @@ const Members = () => (
 			<div className='mt-2'>
 				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
 					{members.map((member) => (
-						<Link key={member.id} href='/member/[mid]' as={`member/${member.id}`}>
+						<Link key={member.id} href='/[mid]' as={`/${member.id}`}>
 							<div key={member.id} className='rounded overflow-hidden shadow-lg'>
 								<img className='w-full' src={member.image} alt='Mountain' />
 								<div className='px-6 py-4'>
@@ -45,7 +45,7 @@ export default Members
 
 const members = [
 	{
-		id: '1',
+		id: 'nhatnc',
 		image: '/images/1.jpg',
 		title: '[Tết Nguyên Đán - Tết cổ truyền của dân tộc Việt Nam]',
 		content:
