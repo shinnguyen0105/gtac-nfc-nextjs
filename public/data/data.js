@@ -319,7 +319,7 @@ const members = [
 		id: 'nhubh',
 		name: 'Bùi Hiền Như',
 		email: 'hiennhu112@gmail.com',
-		dateOfBirth: '1/1/2000',
+		dateOfBirth: '01/01/2000',
 		phone: '0774182385',
 		facebookUrl: '',
 		instaUrl: '',
