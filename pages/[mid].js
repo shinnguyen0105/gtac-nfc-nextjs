@@ -13,12 +13,11 @@ const Member = ({ member }) => {
 						<div
 							className='block rounded-full shadow-xl mx-auto sm:-mt-18 md:-mt-32 h-48 w-48 bg-cover bg-center'
 							style={{
-								backgroundImage:
-									'url(https://images.unsplash.com/photo-1612480797665-c96d261eae09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80)',
+								backgroundImage: `url(images/${member.id}.png)`,
 							}}
 						></div>
 
-						<h1 className='text-3xl font-bold pt-8'>Nguyen Cong Nhat</h1>
+						<h1 className='text-3xl font-bold pt-8'>{member.name}</h1>
 
 						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
 						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
@@ -27,14 +26,28 @@ const Member = ({ member }) => {
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 64 64'
 							>
-								<path stroke-width="5"
-  stroke-miterlimit="10" stroke="#15803c" fill="none" d="M55.9 28.3c.1-.8.1-1.5.1-2.3a24 24 0 0 0-48 0c0 .8 0 1.6.1 2.3v.3C10.1 47.6 32 61 32 61s21.9-13.6 23.8-32.3z"
-  data-name="layer2" stroke-linejoin="round" stroke-linecap="round"></path>
-  <path d="M32 14v14h10" stroke-width="5" stroke-miterlimit="10"
-  stroke="#15803c" fill="none" data-name="layer1" stroke-linejoin="round"
-  stroke-linecap="round"></path>
+								<path
+									stroke-width='5'
+									stroke-miterlimit='10'
+									stroke='#15803c'
+									fill='none'
+									d='M55.9 28.3c.1-.8.1-1.5.1-2.3a24 24 0 0 0-48 0c0 .8 0 1.6.1 2.3v.3C10.1 47.6 32 61 32 61s21.9-13.6 23.8-32.3z'
+									data-name='layer2'
+									stroke-linejoin='round'
+									stroke-linecap='round'
+								></path>
+								<path
+									d='M32 14v14h10'
+									stroke-width='5'
+									stroke-miterlimit='10'
+									stroke='#15803c'
+									fill='none'
+									data-name='layer1'
+									stroke-linejoin='round'
+									stroke-linecap='round'
+								></path>
 							</svg>{' '}
-							01/05/1999
+							{member.dateOfBirth}
 						</p>
 						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
 							<svg
@@ -58,7 +71,9 @@ const Member = ({ member }) => {
 					className='rounded-3xl shadow-2xl bg-white mx-auto md:mt-20'
 				>
 					<div className='p-4 md:p-12 lg:text-left text-center'>
-						<h1 className='text-3xl font-bold pt-8'>Email &#38; Phone number:</h1>
+						<h1 className='text-3xl font-bold pt-8'>
+							Email &#38; Phone number:
+						</h1>
 
 						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
 						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
@@ -67,44 +82,40 @@ const Member = ({ member }) => {
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 64 64'
 							>
-								<path d="M54 33.6V2H10v31.6M18 12h10m-4 8h22m-28 8h28"
-  stroke-width="5" stroke-miterlimit="10" stroke="#15803c" fill="none" data-name="layer2"
-  stroke-linejoin="round" stroke-linecap="round"></path>
-  <path d="M42.08 41.944L62 28M2 28l19.92 13.944M2 62l20.929-21.071c3.905-3.9 14.237-3.9 18.143 0L62 62"
-  stroke-width="5" stroke-miterlimit="10" stroke="#15803c" fill="none" data-name="layer1"
-  stroke-linejoin="round" stroke-linecap="round"></path>
-  <path d="M54 21.063L62 28v34H2V28l8-6.937" stroke-width="5" stroke-miterlimit="10"
-  stroke="#15803c" fill="none" data-name="layer1" stroke-linejoin="round"
-  stroke-linecap="round"></path>
+								<path
+									d='M54 33.6V2H10v31.6M18 12h10m-4 8h22m-28 8h28'
+									stroke-width='5'
+									stroke-miterlimit='10'
+									stroke='#15803c'
+									fill='none'
+									data-name='layer2'
+									stroke-linejoin='round'
+									stroke-linecap='round'
+								></path>
+								<path
+									d='M42.08 41.944L62 28M2 28l19.92 13.944M2 62l20.929-21.071c3.905-3.9 14.237-3.9 18.143 0L62 62'
+									stroke-width='5'
+									stroke-miterlimit='10'
+									stroke='#15803c'
+									fill='none'
+									data-name='layer1'
+									stroke-linejoin='round'
+									stroke-linecap='round'
+								></path>
+								<path
+									d='M54 21.063L62 28v34H2V28l8-6.937'
+									stroke-width='5'
+									stroke-miterlimit='10'
+									stroke='#15803c'
+									fill='none'
+									data-name='layer1'
+									stroke-linejoin='round'
+									stroke-linecap='round'
+								></path>
 							</svg>{' '}
-							0339778564
+							{member.email}
 						</p>
 						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 20 20'
-							>
-								<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
-							</svg>{' '}
-							Da Nang, Viet Nam
-						</p>
-						{/* <p  className='pt-8 text-sm'>
-								Totally optional short description about yourself, what you do
-								and so on.
-							</p> */}
-					</div>
-				</div>
-				{/* new component */}
-				<div
-					id='profile'
-					className='rounded-3xl shadow-2xl bg-white mx-auto md:mt-10'
-				>
-					<div className='p-4 md:p-12 lg:text-left text-center'>
-						<h1 className='text-3xl font-bold pt-8'>LinkedIn:</h1>
-
-						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
-						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
 							<svg
 								className='h-4 fill-current text-green-700 pr-4'
 								xmlns='http://www.w3.org/2000/svg'
@@ -119,17 +130,7 @@ const Member = ({ member }) => {
 									d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
 								></path>{' '}
 							</svg>{' '}
-							0339778564
-						</p>
-						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 20 20'
-							>
-								<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
-							</svg>{' '}
-							Da Nang, Viet Nam
+							{member.phone}
 						</p>
 						{/* <p  className='pt-8 text-sm'>
 								Totally optional short description about yourself, what you do
@@ -138,217 +139,255 @@ const Member = ({ member }) => {
 					</div>
 				</div>
 				{/* new component */}
-				<div
-					id='profile'
-					className='rounded-3xl shadow-2xl bg-white mx-auto md:mt-10'
-				>
-					<div className='p-4 md:p-12 lg:text-left text-center'>
-						<h1 className='text-3xl font-bold pt-8'>Behance:</h1>
+				{member.linkedInUrl ? (
+					<div
+						id='profile'
+						className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
+					>
+						<div className='p-4 md:p-12 lg:text-left text-center'>
+							<h1 className='text-3xl font-bold pt-8'>LinkedIn:</h1>
 
-						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
-						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 64 64'
-							>
-								<path
-									data-name='layer2'
-									d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
-								></path>
-								<path
-									data-name='layer1'
-									d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
-								></path>{' '}
-							</svg>{' '}
-							0339778564
-						</p>
-						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 20 20'
-							>
-								<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
-							</svg>{' '}
-							Da Nang, Viet Nam
-						</p>
-						{/* <p  className='pt-8 text-sm'>
+							<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
+							<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 20 20'
+								>
+									<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
+								</svg>{' '}
+								{member.linkedInUrl}
+							</p>
+							{/* <p  className='pt-8 text-sm'>
 								Totally optional short description about yourself, what you do
 								and so on.
 							</p> */}
+						</div>
 					</div>
-				</div>
+				) : (
+					<></>
+				)}
+
 				{/* new component */}
-				<div
-					id='profile'
-					className='rounded-3xl shadow-2xl bg-white mx-auto md:mt-10'
-				>
-					<div className='p-4 md:p-12 lg:text-left text-center'>
-						<h1 className='text-3xl font-bold pt-8'>Github:</h1>
+				{member.behanceUrl ? (
+					<div
+						id='profile'
+						className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
+					>
+						<div className='p-4 md:p-12 lg:text-left text-center'>
+							<h1 className='text-3xl font-bold pt-8'>Behance:</h1>
 
-						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
-						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 64 64'
-							>
-								<path
-									data-name='layer2'
-									d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
-								></path>
-								<path
-									data-name='layer1'
-									d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
-								></path>{' '}
-							</svg>{' '}
-							0339778564
-						</p>
-						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 20 20'
-							>
-								<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
-							</svg>{' '}
-							Da Nang, Viet Nam
-						</p>
-						{/* <p  className='pt-8 text-sm'>
+							<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
+							<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 64 64'
+								>
+									<path
+										data-name='layer2'
+										d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
+									></path>
+									<path
+										data-name='layer1'
+										d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
+									></path>{' '}
+								</svg>{' '}
+								0339778564
+							</p>
+							<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 20 20'
+								>
+									<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
+								</svg>{' '}
+								Da Nang, Viet Nam
+							</p>
+							{/* <p  className='pt-8 text-sm'>
 								Totally optional short description about yourself, what you do
 								and so on.
 							</p> */}
+						</div>
 					</div>
-				</div>
+				) : (
+					<></>
+				)}
 				{/* new component */}
-				<div
-					id='profile'
-					className='rounded-3xl shadow-2xl bg-white mx-auto md:mt-10'
-				>
-					<div className='p-4 md:p-12 lg:text-left text-center'>
-						<h1 className='text-3xl font-bold pt-8'>Bank account:</h1>
+				{member.githubUrl ? (
+					<div
+						id='profile'
+						className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
+					>
+						<div className='p-4 md:p-12 lg:text-left text-center'>
+							<h1 className='text-3xl font-bold pt-8'>Github:</h1>
 
-						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
-						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 64 64'
-							>
-								<path
-									data-name='layer2'
-									d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
-								></path>
-								<path
-									data-name='layer1'
-									d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
-								></path>{' '}
-							</svg>{' '}
-							0339778564
-						</p>
-						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 20 20'
-							>
-								<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
-							</svg>{' '}
-							Da Nang, Viet Nam
-						</p>
-						{/* <p  className='pt-8 text-sm'>
+							<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
+							<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 64 64'
+								>
+									<path
+										data-name='layer2'
+										d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
+									></path>
+									<path
+										data-name='layer1'
+										d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
+									></path>{' '}
+								</svg>{' '}
+								0339778564
+							</p>
+							<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 20 20'
+								>
+									<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
+								</svg>{' '}
+								Da Nang, Viet Nam
+							</p>
+							{/* <p  className='pt-8 text-sm'>
 								Totally optional short description about yourself, what you do
 								and so on.
 							</p> */}
+						</div>
 					</div>
-				</div>
+				) : (
+					<></>
+				)}
 				{/* new component */}
-				<div
-					id='profile'
-					className='rounded-3xl shadow-2xl bg-white mx-auto md:mt-10'
-				>
-					<div className='p-4 md:p-12 lg:text-left text-center'>
-						<h1 className='text-3xl font-bold pt-8'>Facebook:</h1>
+				{member.facebookUrl ? (
+					<div
+						id='profile'
+						className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
+					>
+						<div className='p-4 md:p-12 lg:text-left text-center'>
+							<h1 className='text-3xl font-bold pt-8'>Facebook:</h1>
 
-						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
-						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 64 64'
-							>
-								<path
-									data-name='layer2'
-									d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
-								></path>
-								<path
-									data-name='layer1'
-									d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
-								></path>{' '}
-							</svg>{' '}
-							0339778564
-						</p>
-						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 20 20'
-							>
-								<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
-							</svg>{' '}
-							Da Nang, Viet Nam
-						</p>
-						{/* <p  className='pt-8 text-sm'>
+							<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
+							<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 64 64'
+								>
+									<path
+										data-name='layer2'
+										d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
+									></path>
+									<path
+										data-name='layer1'
+										d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
+									></path>{' '}
+								</svg>{' '}
+								0339778564
+							</p>
+							<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 20 20'
+								>
+									<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
+								</svg>{' '}
+								Da Nang, Viet Nam
+							</p>
+							{/* <p  className='pt-8 text-sm'>
 								Totally optional short description about yourself, what you do
 								and so on.
 							</p> */}
+						</div>
 					</div>
-				</div>
+				) : (
+					<></>
+				)}
 				{/* new component */}
-				<div
-					id='profile'
-					className='rounded-3xl shadow-2xl bg-white mx-auto md:mt-10'
-				>
-					<div className='p-4 md:p-12 lg:text-left text-center'>
-						<h1 className='text-3xl font-bold pt-8'>Instagram:</h1>
+				{member.instaUrl ? (
+					<div
+						id='profile'
+						className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
+					>
+						<div className='p-4 md:p-12 lg:text-left text-center'>
+							<h1 className='text-3xl font-bold pt-8'>Instagram:</h1>
 
-						<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
-						<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 64 64'
-							>
-								<path
-									data-name='layer2'
-									d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
-								></path>
-								<path
-									data-name='layer1'
-									d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
-								></path>{' '}
-							</svg>{' '}
-							0339778564
-						</p>
-						<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
-							<svg
-								className='h-4 fill-current text-green-700 pr-4'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 20 20'
-							>
-								<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
-							</svg>{' '}
-							Da Nang, Viet Nam
-						</p>
-						{/* <p  className='pt-8 text-sm'>
+							<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
+							<p className='pt-4 text-gray-400 text-base flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 64 64'
+								>
+									<path
+										data-name='layer2'
+										d='M58.7 11.4C53.5 6.3 43.1 4 32 4S10.5 6.3 5.3 11.4a11.2 11.2 0 0 0-2 13.2c1.4 1.8 3.3 1.3 4.6 1.1L15 24a3.9 3.9 0 0 0 3-4.5c-.3-3 1.4-7.5 14-7.5s14.3 4.4 14 7.5 2.9 4.3 4 4.5 4.8 1.5 6.1 1.8 3.2.8 4.6-1.1a11.2 11.2 0 0 0-2-13.3z'
+									></path>
+									<path
+										data-name='layer1'
+										d='M40 26.8V20a2 2 0 1 0-4 0v6.1h-8V20a2 2 0 0 0-4 0v6.8A22 22 0 0 0 8 48v12h48V48a22 22 0 0 0-16-21.2zM23 54h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm10 16h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4zm0-8h-2a2 2 0 0 1 0-4h2a2 2 0 0 1 0 4z'
+									></path>{' '}
+								</svg>{' '}
+								0339778564
+							</p>
+							<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 20 20'
+								>
+									<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
+								</svg>{' '}
+								Da Nang, Viet Nam
+							</p>
+							{/* <p  className='pt-8 text-sm'>
 								Totally optional short description about yourself, what you do
 								and so on.
 							</p> */}
+						</div>
 					</div>
-				</div>
+				) : (
+					<></>
+				)}
+				{/* new component */}
+				{member.bankAccount ? (
+					<div
+						id='profile'
+						className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
+					>
+						<div className='p-4 md:p-12 lg:text-left text-center'>
+							<h1 className='text-3xl font-bold pt-8'>Bank account:</h1>
+
+							<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
+							<div
+								className='pt-4 flex items-center justify-center lg:justify-start'
+							>
+								<img src={'images/banks/' + member.bankAccountType + '.png'} />
+							</div>
+							<p className='pt-2 text-gray-400 text-xs lg:text-sm flex items-center justify-center lg:justify-start'>
+								<svg
+									className='h-4 fill-current text-green-700 pr-4'
+									xmlns='http://www.w3.org/2000/svg'
+									viewBox='0 0 20 20'
+								>
+									<path d='M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z' />
+								</svg>{' '}
+								{member.bankAccount}
+							</p>
+							{/* <p  className='pt-8 text-sm'>
+								Totally optional short description about yourself, what you do
+								and so on.
+							</p> */}
+						</div>
+					</div>
+				) : (
+					<></>
+				)}
 				<div className='mt-5 text-center text-slate-400'>
-				© Copyright owned by Greenwich Teaching Assistant Club - Danang Campus
+					© Copyright owned by Greenwich Teaching Assistant Club - Danang Campus
 				</div>
 			</Section>
 		</Page>
@@ -389,7 +428,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'MBbank',
 		bankAccount: '0450180863107',
-		image: "images/lienntq.png",
+		image: 'images/lienntq.png',
 	},
 	{
 		id: 'vitn',
@@ -404,7 +443,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Vietcombank',
 		bankAccount: '1013145401',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'hangdvt',
@@ -419,7 +458,7 @@ const members = [
 		behanceUrl: 'https://www.behance.net/hiranaakira',
 		bankAccountType: 'ABbank',
 		bankAccount: '0061039959018',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'duyendn',
@@ -434,7 +473,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'MBbank',
 		bankAccount: '9704229201073975',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'chinl',
@@ -449,7 +488,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'TPbank',
 		bankAccount: '03152676901',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'haudtk',
@@ -464,7 +503,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'VietCapital',
 		bankAccount: '8007041116295',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'thaontt',
@@ -479,7 +518,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Vietcombank',
 		bankAccount: '0161001752694',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'tralth',
@@ -494,7 +533,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Vietinbank',
 		bankAccount: '105874022432',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'huongmt',
@@ -509,7 +548,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Agribank',
 		bankAccount: '8309205109494',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'vylhk',
@@ -524,7 +563,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Agribank',
 		bankAccount: '4001205146855',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'chauntt',
@@ -539,7 +578,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: '',
 		bankAccount: '',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'haidt',
@@ -554,7 +593,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: '',
 		bankAccount: '',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'chienlt',
@@ -569,7 +608,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'TPbank',
 		bankAccount: '02963519001',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'trunghv',
@@ -584,7 +623,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: '',
 		bankAccount: '',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'phutx',
@@ -593,13 +632,14 @@ const members = [
 		dateOfBirth: '1/11/2002',
 		phone: '0774411805',
 		facebookUrl: 'https://www.facebook.com/profile.php?id=100004141367779',
-		instaUrl: 'https://www.instagram.com/_pppppppppho/?fbclid=IwAR3Vwo2GiNo0MqYsc3auyyJVdbfzBD6Loxy6QcY2nq3FL3EzxXGYuBKNjzk',
+		instaUrl:
+			'https://www.instagram.com/_pppppppppho/?fbclid=IwAR3Vwo2GiNo0MqYsc3auyyJVdbfzBD6Loxy6QcY2nq3FL3EzxXGYuBKNjzk',
 		linkedInUrl: 'https://www.linkedin.com/in/phu-ta-xuan-989518226',
 		githubUrl: '',
 		behanceUrl: '',
 		bankAccountType: 'TPbank',
 		bankAccount: '0406 7367 601',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'tuha',
@@ -614,7 +654,7 @@ const members = [
 		behanceUrl: 'behance.net/tuhoang3',
 		bankAccountType: '16032000',
 		bankAccount: 'ABbank',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'tronglt',
@@ -629,7 +669,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: '',
 		bankAccount: '',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'phulqd',
@@ -644,7 +684,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Vietcombank',
 		bankAccount: '0161001695100',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'ngantl',
@@ -659,7 +699,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Vietcombank',
 		bankAccount: '1012495204',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'nguyenndh',
@@ -674,7 +714,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'BIDV',
 		bankAccount: '56110001119236',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'anhmn',
@@ -689,7 +729,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'TPbank',
 		bankAccount: '90367192568',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'nhubh',
@@ -704,7 +744,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'PVcombank',
 		bankAccount: '107000918456',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'yttm',
@@ -719,7 +759,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'MBbank',
 		bankAccount: '0934933803',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'tuannd',
@@ -734,7 +774,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'Agribank',
 		bankAccount: '3707205173474',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'lamhtk',
@@ -749,7 +789,7 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'TPbank',
 		bankAccount: '03562584001',
-		image: "images/"
+		image: 'images/',
 	},
 	{
 		id: 'huytq',
@@ -764,6 +804,6 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: '',
 		bankAccount: '',
-		image: "images/"
+		image: 'images/',
 	},
 ]
