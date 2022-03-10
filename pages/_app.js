@@ -4,7 +4,6 @@ import '../styles/globals.css'
 
 const App = ({ Component, pageProps }) => {
 	return (
-		<SnackbarProvider maxSnack={3}>
 			<ThemeProvider
 				attribute='class'
 				defaultTheme='system'
@@ -13,7 +12,6 @@ const App = ({ Component, pageProps }) => {
 				<Meta />
 				<Component {...pageProps} />
 			</ThemeProvider>
-		</SnackbarProvider>
 	)
 }
 
