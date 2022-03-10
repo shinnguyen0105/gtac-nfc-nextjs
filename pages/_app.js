@@ -1,5 +1,4 @@
 import { ThemeProvider } from 'next-themes'
-import { SnackbarProvider } from 'notistack'
 import Meta from '../components/meta'
 import '../styles/globals.css'
 
