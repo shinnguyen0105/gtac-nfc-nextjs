@@ -1,8 +1,38 @@
+import { useEffect, useState } from 'react'
 import Page from '../components/page'
 import Section from '../components/section'
 import members from '../public/data/data'
 
 const Member = ({ member }) => {
+	const [pageURL, setPageURL] = useState('')
+	const [isNativeShare, setNativeShare] = useState(false)
+	useEffect(() => {
+		setPageURL(window.location.href)
+		if (navigator.share) {
+			setNativeShare(true)
+		}
+	}, [])
+	const handleCopyData = (data) => {
+		async function screenShot() {
+			try {
+				if (isNativeShare) {
+					await navigator.clipboard.writeText(data).then(
+						function () {
+							/* clipboard successfully set */
+							console.log('success')
+						},
+						function () {
+							/* clipboard write failed */
+							console.log('failed ')
+						}
+					)
+				}
+			} catch (err) {
+				console.error(err)
+			}
+		}
+		screenShot()
+	}
 	return (
 		<>
 			{member ? (
@@ -308,6 +338,9 @@ const Member = ({ member }) => {
 									<p className='pt-2 text-gray-500 text-xl lg:text-2xl flex items-center justify-center lg:justify-start'>
 										{member.bankAccount}
 									</p>
+									<button onClick={handleCopyData(member.bankAccount)}>
+										copy
+									</button>
 									{/* <p  className='pt-8 text-sm'>
 								Totally optional short description about yourself, what you do
 								and so on.
