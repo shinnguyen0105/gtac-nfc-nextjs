@@ -24,10 +24,10 @@ const Members = () => {
 									<div className='font-bold text-sm mb-2  text-white'>
 										{member.name}
 									</div>
-									<p className='text-gray-700 text-xs	 text-white text-base'>
+									<p className='text-slate-200 text-xs'>
 										Phone: {member.phone}
 									</p>
-									<p className='text-gray-700 text-xs  text-white text-base'>
+									<p className='text-slate-200 text-xs'>
 										Email: {member.email}
 									</p>
 								</div>
