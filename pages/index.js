@@ -6,7 +6,7 @@ const Members = () => {
 	return (
 		<Page>
 			<Section>
-				<h2 className='text-xl font-semibold'>GTAC Members:</h2>
+				<h2 className='text-xl font-semibold text-white'>GTAC Members:</h2>
 
 				<div className='mt-2'>
 					<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
@@ -21,11 +21,13 @@ const Members = () => {
 										src={`images/${member.id}.png`}
 										alt='Mountain'
 									/>
-									<div className='font-bold text-sm mb-2'>{member.name}</div>
-									<p className='text-gray-700 text-xs	 text-base'>
+									<div className='font-bold text-sm mb-2  text-white'>
+										{member.name}
+									</div>
+									<p className='text-gray-700 text-xs	 text-white text-base'>
 										Phone: {member.phone}
 									</p>
-									<p className='text-gray-700 text-xs text-base'>
+									<p className='text-gray-700 text-xs  text-white text-base'>
 										Email: {member.email}
 									</p>
 								</div>
