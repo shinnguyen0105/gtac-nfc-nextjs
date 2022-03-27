@@ -155,25 +155,25 @@ const Member = ({ member }) => {
 										className='h-4 fill-current text-green-700 pr-4 ml-3'
 									>
 										<path
-											data-name='layer2'
-											fill='none'
-											stroke='#202020'
-											stroke-miterlimit='10'
-											stroke-width='2'
-											d='M16 48H2V2h46v14'
-											stroke-linejoin='round'
-											stroke-linecap='round'
-										></path>
-										<path
-											data-name='layer1'
-											fill='none'
-											stroke='#202020'
-											stroke-miterlimit='10'
-											stroke-width='2'
-											d='M16 16h46v46H16z'
-											stroke-linejoin='round'
-											stroke-linecap='round'
-										></path>
+												data-name='layer2'
+												fill='none'
+												stroke='#202020'
+												strokeMiterlimit='10'
+												strokeWidth='2'
+												d='M16 48H2V2h46v14'
+												strokeLinejoin='round'
+												strokeLinecap='round'
+											></path>
+											<path
+												data-name='layer1'
+												fill='none'
+												stroke='#202020'
+												strokeMiterlimit='10'
+												strokeWidth='2'
+												d='M16 16h46v46H16z'
+												strokeLinejoin='round'
+												strokeLinecap='round'
+											></path>
 									</svg>
 								</p>
 								<p className='pt-2 text-gray-500 text-sm sm:text-xl lg:text-sm flex items-center justify-center lg:justify-start' onClick={() => handleCopyData(member.phone)}>
@@ -198,25 +198,25 @@ const Member = ({ member }) => {
 										className='h-4 fill-current text-green-700 pr-4 ml-3'
 									>
 										<path
-											data-name='layer2'
-											fill='none'
-											stroke='#202020'
-											stroke-miterlimit='10'
-											stroke-width='2'
-											d='M16 48H2V2h46v14'
-											stroke-linejoin='round'
-											stroke-linecap='round'
-										></path>
-										<path
-											data-name='layer1'
-											fill='none'
-											stroke='#202020'
-											stroke-miterlimit='10'
-											stroke-width='2'
-											d='M16 16h46v46H16z'
-											stroke-linejoin='round'
-											stroke-linecap='round'
-										></path>
+												data-name='layer2'
+												fill='none'
+												stroke='#202020'
+												strokeMiterlimit='10'
+												strokeWidth='2'
+												d='M16 48H2V2h46v14'
+												strokeLinejoin='round'
+												strokeLinecap='round'
+											></path>
+											<path
+												data-name='layer1'
+												fill='none'
+												stroke='#202020'
+												strokeMiterlimit='10'
+												strokeWidth='2'
+												d='M16 16h46v46H16z'
+												strokeLinejoin='round'
+												strokeLinecap='round'
+											></path>
 									</svg>
 								</p>
 								{/* <p  className='pt-8 text-sm'>
@@ -401,21 +401,21 @@ const Member = ({ member }) => {
 												data-name='layer2'
 												fill='none'
 												stroke='#202020'
-												stroke-miterlimit='10'
-												stroke-width='2'
+												strokeMiterlimit='10'
+												strokeWidth='2'
 												d='M16 48H2V2h46v14'
-												stroke-linejoin='round'
-												stroke-linecap='round'
+												strokeLinejoin='round'
+												strokeLinecap='round'
 											></path>
 											<path
 												data-name='layer1'
 												fill='none'
 												stroke='#202020'
-												stroke-miterlimit='10'
-												stroke-width='2'
+												strokeMiterlimit='10'
+												strokeWidth='2'
 												d='M16 16h46v46H16z'
-												stroke-linejoin='round'
-												stroke-linecap='round'
+												strokeLinejoin='round'
+												strokeLinecap='round'
 											></path>
 										</svg>
 									</p>
