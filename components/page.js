@@ -4,7 +4,7 @@ const Page = ({ title, children }) => (
 	<>
 		{title ? (
 			<Head>
-				<title>CV | {title}</title>
+				<title>GTAC | {title}</title>
 			</Head>
 		) : null}
 		<main className='mx-auto px-safe pt-20 pb-16 sm:pb-0 max-w-screen-md'>
