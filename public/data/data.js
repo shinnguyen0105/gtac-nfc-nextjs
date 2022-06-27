@@ -18,7 +18,7 @@ const members = [
 		id: 'vitn',
 		name: 'Trần Ngọc Vĩ',
 		email: 'tranngocvi.as@gmail.com',
-		dateOfBirth: '12/3/2002',
+		dateOfBirth: '12/03/2002',
 		phone: '0868434850',
 		facebookUrl: 'https://www.facebook.com/tranngocvi.as',
 		instaUrl: 'https://www.instagram.com/vtn.tranngocvi/',
