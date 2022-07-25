@@ -390,6 +390,21 @@ const members = [
 		bankAccount: '',
 		image: 'images/',
 	},
+	{
+		id: 'trinhtk',
+		name: 'Tống Kiều Trinh',
+		email: 'tongkieutrinh2002@gmail.com',
+		dateOfBirth: '27/11/2022',
+		phone: '0919176745',
+		facebookUrl: 'https://www.facebook.com/profile.php?id=100007276604976',
+		instaUrl: '',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'ABbank',
+		bankAccount: '1501006246088',
+		image: 'images/',
+	},
 ]
 
 export default members;
