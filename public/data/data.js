@@ -420,6 +420,21 @@ const members = [
 		bankAccount: '',
 		image: 'images/',
 	},
+	{
+		id: 'nghialm',
+		name: 'Le Minh Nghia',
+		email: 'nghialmgcd201527@fpt.edu.vn',
+		dateOfBirth: '29/07/2002',
+		phone: '0824 063 391',
+		facebookUrl: 'https://www.facebook.com/leemynnghia',
+		instaUrl: '',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: '',
+		bankAccount: '',
+		image: 'images/',
+	},
 ]
 
 export default members;
