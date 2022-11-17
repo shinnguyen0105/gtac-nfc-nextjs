@@ -422,7 +422,7 @@ const members = [
 	},
 	{
 		id: 'nghialm',
-		name: 'Le Minh Nghia',
+		name: 'Lê Minh Nghĩa',
 		email: 'nghialmgcd201527@fpt.edu.vn',
 		dateOfBirth: '29/07/2002',
 		phone: '0824 063 391',
