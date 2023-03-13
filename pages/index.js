@@ -19,7 +19,8 @@ const Members = () => {
 									<img
 										className='w-full'
 										src={`images/${member.id}.png`}
-										alt='Mountain'
+										alt={`${member.name}`}
+
 									/>
 									<div className='font-bold text-sm mb-2  text-white'>
 										{member.name}
@@ -30,6 +31,9 @@ const Members = () => {
 									<p className='text-slate-200 text-xs'>
 										Email: {member.email}
 									</p>
+									<button className='bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded'>
+										More Information
+									</button>
 								</div>
 							</Link>
 						))}
