@@ -6,3 +6,4 @@ cd nextjs-pwa
 npm i
 npm run dev
 ```
+.
