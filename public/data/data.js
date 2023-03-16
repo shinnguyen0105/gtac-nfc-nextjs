@@ -1,19 +1,4 @@
 const members = [
-		{
-		id: 'vitn',
-		name: 'Trần Ngọc Vĩ',
-		email: 'tranngocvi.as@gmail.com',
-		dateOfBirth: '12/03/2002',
-		phone: '0868 434 850',
-		facebookUrl: 'https://www.facebook.com/tranngocvi.as',
-		instaUrl: 'https://www.instagram.com/tranngocvi.as',
-		linkedInUrl: 'https://www.linkedin.com/in/ngoc-vi-tran-b28752226',
-		githubUrl: 'https://www.github.com/tranngocvi',
-		behanceUrl: 'https://www.behance.net/ngocvitran',
-		bankAccountType: 'Vietcombank',
-		bankAccount: '1013145401',
-		image: 'images/',
-	},
 	{
 		id: 'nguyenndh',
 		name: 'Nguyễn Đặng Hà Nguyên',
@@ -27,6 +12,21 @@ const members = [
 		behanceUrl: '',
 		bankAccountType: 'BIDV',
 		bankAccount: '56110001119236',
+		image: 'images/',
+	},
+	{
+		id: 'vitn',
+		name: 'Trần Ngọc Vĩ',
+		email: 'tranngocvi.as@gmail.com',
+		dateOfBirth: '12/03/2002',
+		phone: '0868 434 850',
+		facebookUrl: 'fb.com/tranngocvi.as',
+		instaUrl: 'instagram.com/tranngocvi.as',
+		linkedInUrl: 'linkedin.com/in/ngoc-vi-tran-b28752226',
+		githubUrl: 'github.com/tranngocvi',
+		behanceUrl: 'behance.net/ngocvitran',
+		bankAccountType: 'Vietcombank',
+		bankAccount: '1013145401',
 		image: 'images/',
 	},
 	{
@@ -783,3 +783,4 @@ const members = [
 ]
 
 export default members;
+
