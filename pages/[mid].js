@@ -398,11 +398,6 @@ const Member = ({ member }) => {
 							</p> */}
 								</div>
 							</div>
-						) : (
-							<></>
-						)}
-
-						{/* back to homepage */}
 						<div
 							id='profile'
 							className='rounded-3xl shadow-2xl mx-auto mt-10'>
