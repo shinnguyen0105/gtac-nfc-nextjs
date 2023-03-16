@@ -450,6 +450,21 @@ const members = [
 		bankAccount: '0050 1000 2190 3006',
 		image: 'images/',
 	},
+	{
+		id: 'huyndt',
+		name: 'Nguyễn Đắc Trung Huy',
+		email: 'huyndtgbd220163@fpt.edu.vn',
+		dateOfBirth: '04/05/2004',
+		phone: '0988 988 025',
+		facebookUrl: '',
+		instaUrl: '',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'MBbank',
+		bankAccount: '0988 988 025',
+		image: 'images/',
+	},
 ]
 
 export default members;
