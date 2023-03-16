@@ -56,7 +56,7 @@ const Member = ({ member }) => {
 									{member.name ? member.name : 'No user exist'}
 								</h1>
 
-								<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-yellow-500 opacity-25'></div>
+								<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-black-500 opacity-25'></div>
 
 								<p className='common-class pt-4 text-black-500 text-base flex items-center justify-center lg:justify-start'>									<svg
 									className='h-4 fill-current text-red-700 pr-4'
