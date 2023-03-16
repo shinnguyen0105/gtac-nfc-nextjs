@@ -205,7 +205,7 @@ const Member = ({ member }) => {
 								className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
 							>
 								<div className='p-4 md:p-12 lg:text-left text-center'>
-									<h1 className='text-3xl font-bold pt-8'>LinkedIn:</h1>
+									<h1 className='text-3xl font-bold pt-8'>LinkedIn</h1>
 
 									<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
 									<p className='pt-2 text-gray-500 text-sm sm:text-xl lg:text-sm flex items-center justify-center lg:justify-start'>
@@ -236,7 +236,7 @@ const Member = ({ member }) => {
 								className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
 							>
 								<div className='p-4 md:p-12 lg:text-left text-center'>
-									<h1 className='text-3xl font-bold pt-8'>Behance:</h1>
+									<h1 className='text-3xl font-bold pt-8'>Behance</h1>
 
 									<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
 
@@ -265,7 +265,7 @@ const Member = ({ member }) => {
 								className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
 							>
 								<div className='p-4 md:p-12 lg:text-left text-center'>
-									<h1 className='text-3xl font-bold pt-8'>Github:</h1>
+									<h1 className='text-3xl font-bold pt-8'>Github</h1>
 
 									<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
 
@@ -295,7 +295,7 @@ const Member = ({ member }) => {
 								className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
 							>
 								<div className='p-4 md:p-12 lg:text-left text-center'>
-									<h1 className='text-3xl font-bold pt-8'>Facebook:</h1>
+									<h1 className='text-3xl font-bold pt-8'>Facebook</h1>
 
 									<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
 
@@ -324,7 +324,7 @@ const Member = ({ member }) => {
 								className='rounded-3xl shadow-2xl bg-white mx-auto mt-10'
 							>
 								<div className='p-4 md:p-12 lg:text-left text-center'>
-									<h1 className='text-3xl font-bold pt-8'>Instagram:</h1>
+									<h1 className='text-3xl font-bold pt-8'>Instagram</h1>
 
 									<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-green-500 opacity-25'></div>
 									<p className='pt-2 text-gray-500 text-sm sm:text-xl lg:text-sm flex items-center justify-center lg:justify-start'>
@@ -414,16 +414,17 @@ const Member = ({ member }) => {
 									</button>
 								</Link>
 							</div>
-						</div> */}
+						</div>
 						<div className='mt-5 text-center text-slate-400'>
 							© Copyright owned by Greenwich Teaching Assistant Club - Danang
 							Campus
 						</div>
 					</Section>
 				</Page>
-			) : (
-				<></>
-			)}
+	) : (
+		<></>
+	)
+}
 		</>
 	)
 }
