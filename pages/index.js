@@ -6,8 +6,8 @@ const Members = () => {
 	return (
 		<Page>
 			<Section>
-				<h2 className='text-xl font-semibold text-white'>LIST OF GTAC MEMBERS:</h2>
-
+				<h2 className='text-xl font-semibold text-white'>GTAC NFC CARD MEMBERS</h2>
+				<br />
 				<div className='mt-2'>
 					<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
 						{members.map((member) => (
@@ -31,16 +31,20 @@ const Members = () => {
 									<p className='text-slate-200 text-xs'>
 										Email: {member.email}
 									</p>
-									<button className='bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded'>
-										More Information
-									</button>
 								</div>
 							</Link>
 						))}
 					</div>
 				</div>
+				<br />
+
+				<div className='mt-5 text-center text-slate-400'>
+					© Copyright owned by Greenwich Teaching Assistant Club - Danang
+					Campus
+				</div>
+
 			</Section>
-		</Page>
+		</Page >
 	)
 }
 
