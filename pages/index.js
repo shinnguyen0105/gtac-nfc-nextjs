@@ -14,28 +14,29 @@ const Members = () => {
 							<Link key={member.id} href='/[mid]' as={`/${member.id}`}>
 								<div
 									key={member.id}
-									className='rounded overflow-hidden shadow-lg bg-inherit'
+									className='rounded overflow-hidden bg-inherit hover:shadow-2xl'
 								>
 									<img
 										className='w-full'
 										src={`images/${member.id}.png`}
 										alt={`${member.name}`}
-
 									/>
-									<div className='font-bold text-sm mb-2  text-white'>
+									<div className='font-bold text-sm mb-2 text-white'>
 										{member.name}
 									</div>
-									<p className='text-slate-200 text-xs'>
-										Phone: {member.phone}
-									</p>
-									<p className='text-slate-200 text-xs'>
-										Email: {member.email}
-									</p>
+									<p className='text-slate-200 text-xs'>Phone: {member.phone}</p>
+									<p className='text-slate-200 text-xs'>Email: {member.email}</p>
 								</div>
 							</Link>
 						))}
 					</div>
 				</div>
+
+				<div className='mt-5 text-center text-slate-400'>
+					© Copyright owned by Greenwich Teaching Assistant Club - Danang
+					Campus
+				</div>
+
 			</Section>
 		</Page >
 	)
