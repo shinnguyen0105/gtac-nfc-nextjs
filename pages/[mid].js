@@ -403,7 +403,7 @@ const Member = ({ member }) => {
 						)}
 
 						{/* back to homepage */}
-						{/* <div
+						{/* /* <div
 							id='profile'
 							className='rounded-3xl shadow-2xl mx-auto mt-10'
 						>
@@ -414,17 +414,17 @@ const Member = ({ member }) => {
 									</button>
 								</Link>
 							</div>
-						</div>
+						</div> */}
 						<div className='mt-5 text-center text-slate-400'>
 							© Copyright owned by Greenwich Teaching Assistant Club - Danang
 							Campus
 						</div>
 					</Section>
 				</Page>
-	) : (
-		<></>
-	)
-}
+			) : (
+				<></>
+			)
+			}
 		</>
 	)
 }
