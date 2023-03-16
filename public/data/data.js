@@ -465,6 +465,21 @@ const members = [
 		bankAccount: '0988 988 025',
 		image: 'images/',
 	},
+	{
+		id: 'hungtdd',
+		name: 'Trịnh Đỗ Duy Hưng',
+		email: 'hungtddgcd201514@fpt.edu.vn',
+		dateOfBirth: '21/09/2002',
+		phone: '0369 853 766',
+		facebookUrl: '',
+		instaUrl: '',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'BIDV',
+		bankAccount: '561100 0132 9752',
+		image: 'images/',
+	},
 ]
 
 export default members;
