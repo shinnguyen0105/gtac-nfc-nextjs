@@ -405,15 +405,7 @@ const Member = ({ member }) => {
 						{/* back to homepage */}
 						<div
 							id='profile'
-							className='rounded-3xl shadow-2xl mx-auto mt-10'
-						>
-							<div className='flex justify-center'>
-								<Link href='/'>
-									<button className='bg-yellow-400 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded'>
-										Back to Homepage
-									</button>
-								</Link>
-							</div>
+							className='rounded-3xl shadow-2xl mx-auto mt-10'>
 						</div>
 						<div className='mt-5 text-center text-slate-400'>
 							© Copyright owned by Greenwich Teaching Assistant Club - Danang
