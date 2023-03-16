@@ -450,6 +450,21 @@ const members = [
 		bankAccount: '5651 0000 299522',
 		image: 'images/',
 	},
+	{
+		id: 'nguyenllk',
+		name: 'Lê Lâm Khôi Nguyên',
+		email: 'nguyenllkgbd220236@fpt.edu.vn',
+		dateOfBirth: '10/10/2004',
+		phone: '0888 153 633',
+		facebookUrl: '',
+		instaUrl: '',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'OCB',
+		bankAccount: '0050 1000 2190 3006',
+		image: 'images/',
+	},
 ]
 
 export default members;
