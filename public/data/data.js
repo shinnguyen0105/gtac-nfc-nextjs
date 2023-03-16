@@ -8,7 +8,7 @@ const members = [
 		facebookUrl: 'https://fb.com/tranngocvi.as',
 		instaUrl: 'https://instagram.com/tranngocvi.as/',
 		linkedInUrl: 'https://linkedin.com/in/ngoc-vi-tran-b28752226/',
-		githubUrl: '',
+		githubUrl: 'https://github.com/tranngocvi',
 		behanceUrl: '',
 		bankAccountType: 'Vietcombank',
 		bankAccount: '1013145401',
