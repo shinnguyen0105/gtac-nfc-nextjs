@@ -438,7 +438,7 @@ const members = [
 	{
 		id: 'kietnt',
 		name: 'Nguyễn Tuấn Kiệt',
-		email: 'kietgdd210002@fpt.edu.vn',
+		email: 'kietntgdd210002@fpt.edu.vn',
 		dateOfBirth: '07/07/2003',
 		phone: '0914852966',
 		facebookUrl: 'https://www.facebook.com/the.kietuanguyen/',
