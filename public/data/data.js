@@ -34,7 +34,7 @@ const members = [
 		name: 'Nguyễn Thị Quỳnh Liên',
 		email: 'quynhlien317@gmail.com',
 		dateOfBirth: '31/07/1998',
-		phone: '0898 242 586',
+		phone: '0795 643 107',
 		facebookUrl: 'https://www.facebook.com/lien.quynh.12177',
 		instaUrl: 'https://instagram.com/quynhlien317',
 		linkedInUrl: '',
@@ -462,14 +462,14 @@ const members = [
 		githubUrl: "",
 		behanceUrl: "",
 		bankAccountType: "OCB",
-		bankAccount: "50100021903006",
+		bankAccount: "0050100021903006",
 		image: ""
 	},
 	{
 		id: "huyndt",
 		name: "Nguyễn Đắc Trung Huy",
 		email: "huyndtgbd220163@fpt.edu.vn",
-		dateOfBirth: "04/05/2004",
+		dateOfBirth: "05/04/2004",
 		phone: "0988988025",
 		facebookUrl: "",
 		instaUrl: "",
@@ -507,7 +507,7 @@ const members = [
 		githubUrl: "",
 		behanceUrl: "",
 		bankAccountType: "AB Bank",
-		bankAccount: "61037166065",
+		bankAccount: "0061037166065",
 		image: ""
 	},
 	{
@@ -544,7 +544,7 @@ const members = [
 		id: "chihlk",
 		name: "Hoàng Lê Kim Chi",
 		email: "chihlkgbd220090@fpt.edu.vn",
-		dateOfBirth: "01/09/2004",
+		dateOfBirth: "09/01/2004",
 		phone: "0901945705",
 		facebookUrl: "",
 		instaUrl: "",
