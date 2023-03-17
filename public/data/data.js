@@ -251,8 +251,8 @@ const members = [
 		linkedInUrl: '',
 		githubUrl: '',
 		behanceUrl: 'behance.net/tuhoang3',
-		bankAccountType: '16032000',
-		bankAccount: 'ABbank',
+		bankAccountType: 'ABbank',
+		bankAccount: '16032000',
 		image: 'images/',
 	},
 	{

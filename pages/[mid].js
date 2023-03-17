@@ -58,14 +58,15 @@ const Member = ({ member }) => {
 
 								<div className='mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-black-500 opacity-25'></div>
 
-								<p className='common-class pt-4 text-black-500 text-base flex items-center justify-center lg:justify-start'>									<svg
-									className='h-4 fill-current text-red-700 pr-4'
-									xmlns='http://www.w3.org/2000/svg'
-									viewBox='0 0 64 64'
-									version="1.1" id="Capa_1"
-								>
-									<path d="M55.6,56.2C48.7,42.4,41.9,28.7,35,14.9c1.5-1,2.5-2.7,2.5-4.6c0-3.1-2.5-5.5-5.5-5.5c-3.1,0-5.5,2.5-5.5,5.5  c0,2.1,1.2,3.9,2.9,4.9c-7,13.7-14,27.4-21,41.1c-0.7,1.3,0.1,3,1.7,3c14.6,0,29.2-0.1,43.7-0.1C55.5,59.2,56.3,57.5,55.6,56.2z   M24.2,34.1l13.5-5.1c1,2,2,4,3,6l-20.6,7C21.4,39.5,22.8,36.8,24.2,34.1z M26.9,28.9c1.8-3.5,3.6-7.1,5.4-10.6  c1.2,2.4,2.4,4.8,3.6,7.2L26.9,28.9z M17.5,47.2l25-8.5c1,2,2,4,3,6l-32,10.6C14.8,52.6,16.1,49.9,17.5,47.2z M47.2,48.3  c1.1,2.3,2.3,4.6,3.4,6.9c-8.2,0-16.3,0-24.5,0L47.2,48.3z M32,8.7c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.6,1.4-1.4,1.5c-0.1,0-0.1,0-0.2,0  c-0.8,0-1.5-0.7-1.5-1.5C30.5,9.4,31.2,8.7,32,8.7z" />
-								</svg>{' '}
+								<p className='common-class pt-4 text-black-500 text-base flex items-center justify-center lg:justify-start'>
+									<svg
+										className='h-4 fill-current text-red-700 pr-4'
+										xmlns='http://www.w3.org/2000/svg'
+										viewBox='0 0 64 64'
+										version="1.1" id="Capa_1"
+									>
+										<path d="M55.6,56.2C48.7,42.4,41.9,28.7,35,14.9c1.5-1,2.5-2.7,2.5-4.6c0-3.1-2.5-5.5-5.5-5.5c-3.1,0-5.5,2.5-5.5,5.5  c0,2.1,1.2,3.9,2.9,4.9c-7,13.7-14,27.4-21,41.1c-0.7,1.3,0.1,3,1.7,3c14.6,0,29.2-0.1,43.7-0.1C55.5,59.2,56.3,57.5,55.6,56.2z   M24.2,34.1l13.5-5.1c1,2,2,4,3,6l-20.6,7C21.4,39.5,22.8,36.8,24.2,34.1z M26.9,28.9c1.8-3.5,3.6-7.1,5.4-10.6  c1.2,2.4,2.4,4.8,3.6,7.2L26.9,28.9z M17.5,47.2l25-8.5c1,2,2,4,3,6l-32,10.6C14.8,52.6,16.1,49.9,17.5,47.2z M47.2,48.3  c1.1,2.3,2.3,4.6,3.4,6.9c-8.2,0-16.3,0-24.5,0L47.2,48.3z M32,8.7c0.8,0,1.5,0.7,1.5,1.5c0,0.8-0.6,1.4-1.4,1.5c-0.1,0-0.1,0-0.2,0  c-0.8,0-1.5-0.7-1.5-1.5C30.5,9.4,31.2,8.7,32,8.7z" />
+									</svg>{' '}
 									{member.dateOfBirth}
 								</p>
 
@@ -82,42 +83,14 @@ const Member = ({ member }) => {
 								Totally optional short description about yourself, what you do
 								and so on.
 							</p> */}
-								<p className='common-class pt-4 text-black-500 text-base flex items-center justify-center lg:justify-start'>									<svg
-									className='h-4 fill-current text-black pr-4'
-									xmlns='http://www.w3.org/2000/svg'
-									viewBox='0 0 64 64'
-								>
-									<path
-										d='M54 33.6V2H10v31.6M18 12h10m-4 8h22m-28 8h28'
-										strokeWidth='5'
-										strokeMiterlimit='10'
-										stroke='#15803c'
-										fill='none'
-										data-name='layer2'
-										strokeLinejoin='round'
-										strokeLinecap='round'
-									></path>
-									<path
-										d='M42.08 41.944L62 28M2 28l19.92 13.944M2 62l20.929-21.071c3.905-3.9 14.237-3.9 18.143 0L62 62'
-										strokeWidth='5'
-										strokeMiterlimit='10'
-										stroke='#15803c'
-										fill='none'
-										data-name='layer1'
-										strokeLinejoin='round'
-										strokeLinecap='round'
-									></path>
-									<path
-										d='M54 21.063L62 28v34H2V28l8-6.937'
-										strokeWidth='5'
-										strokeMiterlimit='10'
-										stroke='#15803c'
-										fill='none'
-										data-name='layer1'
-										strokeLinejoin='round'
-										strokeLinecap='round'
-									></path>
-								</svg>{' '}
+								<p className='common-class pt-4 text-black-500 text-base flex items-center justify-center lg:justify-start'>
+									<svg
+										className='h-4 fill-current text-black-700 pr-4'
+										fill="#000000"
+										viewBox="0 0 512 512"
+										xmlns="http://www.w3.org/2000/svg">
+										<path d="M64 128Q64 113 73 105 81 96 96 96L416 96Q431 96 440 105 448 113 448 128L448 144 256 272 64 144 64 128ZM256 328L448 200 448 384Q448 416 416 416L96 416Q64 416 64 384L64 200 256 328Z" />
+									</svg>{' '}
 									{member.email}{' '}
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
