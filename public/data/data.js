@@ -175,8 +175,8 @@ const members = [
 		linkedInUrl: 'https://www.linkedin.com/in/chaunguyen2510',
 		githubUrl: '',
 		behanceUrl: '',
-		bankAccountType: '0383 2759 801',
-		bankAccount: 'TPbank',
+		bankAccountType: 'TPbank',
+		bankAccount: '0383 2759 801',
 		image: 'images/',
 	},
 	{
