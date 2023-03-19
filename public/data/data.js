@@ -401,8 +401,8 @@ const members = [
 		linkedInUrl: '',
 		githubUrl: '',
 		behanceUrl: '',
-		bankAccountType: 'ABbank',
-		bankAccount: '1501006246088',
+		bankAccountType: 'Vietcombank',
+		bankAccount: '9919 176 745',
 		image: 'images/',
 	},
 	{
