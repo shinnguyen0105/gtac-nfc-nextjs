@@ -780,21 +780,6 @@ const members = [
 		bankAccount: "707394976",
 		image: ""
 	}
-	{
-		id: 'quyenpt',
-		name: 'Phan Thùy Quyên',
-		email: 'Quyenptgbd201532@fpt.edu.vn',
-		dateOfBirth: '13/11/2002',
-		phone: '0398 769 835',
-		facebookUrl: 'https://www.facebook.com/thuyquyenphan1311',
-		instaUrl: '',
-		linkedInUrl: '',
-		githubUrl: '',
-		behanceUrl: '',
-		bankAccountType: 'MBbank',
-		bankAccount: '630013112002',
-		image: 'images/',
-	},
 ]
 
 export default members;
