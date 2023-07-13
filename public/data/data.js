@@ -446,8 +446,8 @@ const members = [
 		linkedInUrl: 'https://www.linkedin.com/in/the-kietuanguyen/',
 		githubUrl: 'https://github.com/KieTuaNguyen/',
 		behanceUrl: '',
-		bankAccountType: 'BIDV',
-		bankAccount: '5651 0000 299522',
+		bankAccountType: 'SHB',
+		bankAccount: '6607072003',
 		image: 'images/',
 	},
 	{
