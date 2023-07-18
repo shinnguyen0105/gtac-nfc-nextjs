@@ -941,6 +941,7 @@ const members = [
 		bankAccount: '0000000000', 
 		image: 'images/', 
 	},
+	
 ]
 
 export default members;
