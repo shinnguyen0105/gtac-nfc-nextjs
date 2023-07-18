@@ -364,9 +364,9 @@ const members = [
 	{
 		id: 'phulqd',
 		name: 'Lê Quang Đức Phú',
-		email: 'Phulqdgcd191075@fpt.edu.vn',
+		email: 'PhuLQD020201@gmail.com',
 		dateOfBirth: '02/02/2001',
-		phone: '0399 298 001',
+		phone: '0328 892 598',
 		facebookUrl: 'https://www.facebook.com/asdas.asdasda.5245/',
 		instaUrl: '',
 		linkedInUrl: '',
