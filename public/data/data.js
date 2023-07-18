@@ -857,7 +857,7 @@ const members = [
 		githubUrl: '', 
 		behanceUrl: '', 
 		bankAccountType: 'TPbank', 
-		bankAccount: '', 
+		bankAccount: '0000000000', 
 		image: 'images/', 
 	}, 
 
@@ -873,7 +873,7 @@ const members = [
 		githubUrl: '', 
 		behanceUrl: '', 
 		bankAccountType: 'TPbank', 
-		bankAccount: '', 
+		bankAccount: '0000000000', 
 		image: 'images/', 
 	}, 
 
@@ -889,7 +889,7 @@ const members = [
 		githubUrl: '', 
 		behanceUrl: '', 
 		bankAccountType: 'TPbank', 
-		bankAccount: '', 
+		bankAccount: '0000000000', 
 		image: 'images/', 
 	}, 
 
@@ -905,7 +905,7 @@ const members = [
 		githubUrl: '', 
 		behanceUrl: '', 
 		bankAccountType: 'TPbank', 
-		bankAccount: '', 
+		bankAccount: '0000000000', 
 		image: 'images/', 
 	}, 
 
@@ -922,7 +922,7 @@ const members = [
 		githubUrl: '', 
 		behanceUrl: '', 
 		bankAccountType: 'TPbank', 
-		bankAccount: '', 
+		bankAccount: '0000000000', 
 		image: 'images/', 
 	},
 
@@ -938,7 +938,7 @@ const members = [
 		githubUrl: '', 
 		behanceUrl: '', 
 		bankAccountType: 'TPbank', 
-		bankAccount: '', 
+		bankAccount: '0000000000', 
 		image: 'images/', 
 	},
 ]
