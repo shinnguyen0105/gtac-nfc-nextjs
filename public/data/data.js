@@ -37,7 +37,7 @@ const members = [
 		phone: '0905 838 349',
 		facebookUrl: ' https://www.facebook.com/nghia.vocong ',
 		instaUrl: '',
-		linkedInUrl: '',
+		linkedInUrl: 'https://www.linkedin.com/in/nghia-cong-vo-msc-finance-6ab3b7118/',
 		githubUrl: '',
 		behanceUrl: '',
 		bankAccountType: 'TPbank',
