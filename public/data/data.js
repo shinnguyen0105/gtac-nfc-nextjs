@@ -22,7 +22,7 @@ const members = [
 		phone: '0000 000 000',
 		facebookUrl: 'https://www.facebook.com/nguyenduynghiem',
 		instaUrl: '',
-		linkedInUrl: '',
+		linkedInUrl: 'https://www.linkedin.com/in/nguyenduynghiem/',
 		githubUrl: '',
 		behanceUrl: '',
 		bankAccountType: 'TPbank',
