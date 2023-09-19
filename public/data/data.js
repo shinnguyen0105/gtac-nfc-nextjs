@@ -17,7 +17,7 @@ const members = [
 	{
 		id: 'nghiemnd',
 		name: 'Nguyễn Duy Nghiêm',
-		email: 'hainm24@fe.edu.vn',
+		email: 'nghiemnd@fe.edu.vn',
 		dateOfBirth: '00/00/0000',
 		phone: '0000 000 000',
 		facebookUrl: 'https://www.facebook.com/nguyenduynghiem',
