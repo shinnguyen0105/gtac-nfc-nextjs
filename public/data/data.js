@@ -934,6 +934,21 @@ const members = [
 		bankAccount: '180120046767',
 		image: 'images/',
 	},
+	{
+		id: 'nguyenntn',
+		name: 'Nguyễn Thị Như Nguyên,
+		email: 'tamdnmgbd220172@fpt.edu.vn',
+		dateOfBirth: '18/01/2004',
+		phone: '0788 511 748',
+		facebookUrl: 'https://www.facebook.com/',
+		instaUrl: 'https://www.instagram.com/',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'MBbank',
+		bankAccount: '180120046767',
+		image: 'images/',
+	},
 
 ]
 
