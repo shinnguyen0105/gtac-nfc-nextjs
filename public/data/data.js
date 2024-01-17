@@ -936,7 +936,7 @@ const members = [
 	},
 	{
 		id: 'nguyenntn',
-		name: 'Nguyễn Thị Như Nguyên,
+		name: 'Nguyễn Thị Như Nguyên',
 		email: 'tamdnmgbd220172@fpt.edu.vn',
 		dateOfBirth: '18/01/2004',
 		phone: '0788 511 748',
