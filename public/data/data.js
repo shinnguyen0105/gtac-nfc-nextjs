@@ -10,7 +10,7 @@ const members = [
 		linkedInUrl: 'https://www.linkedin.com/company/gtac-uog-dn',
 		githubUrl: '',
 		behanceUrl: '',
-		bankAccountType: 'TP Bank',
+		bankAccountType: 'TPbank',
 		bankAccount: '09191767450',
 		image: 'images/',
 	},
