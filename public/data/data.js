@@ -123,7 +123,7 @@ const members = [
 	{
 		id: 'vitn',
 		name: 'Trần Ngọc Vĩ',
-		email: 'tranngocvi.as@gmail.com',
+		email: 'ViTN@gtac.edu.vn',
 		dateOfBirth: '12/03/2002',
 		phone: '(+84) 868 434 850',
 		facebookUrl: 'https://www.facebook.com/tranngocvi.as',
