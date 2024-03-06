@@ -108,7 +108,7 @@ const members = [
 	{
 		id: 'oanhmdnt',
 		name: 'Mai Đoàn Ngọc Tuyết Oanh',
-		email: 'hainm24@fe.edu.vn',
+		email: 'OanhMDNT2@fe.edu.vn',
 		dateOfBirth: '00/00/0000',
 		phone: '0000 000 000',
 		facebookUrl: 'https://www.facebook.com/ty.no.18',
