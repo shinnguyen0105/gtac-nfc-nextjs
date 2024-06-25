@@ -6,7 +6,7 @@ const Members = () => {
 	return (
 		<Page>
 			<Section>
-				<h2 className='text-xl font-semibold text-white'> GTAC x CARD</h2>
+				<h2 className='text-xl font-semibold text-white'>GTAC MEMBERCARD</h2>
 				<br />
 				<div className='mt-2'>
 					<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>

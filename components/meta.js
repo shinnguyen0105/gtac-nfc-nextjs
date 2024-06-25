@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const Meta = () => (
 	<Head>
-		<title>GTAC x CARD</title>
+		<title>GTAC MEMBERCARD</title>
 		<meta charSet='utf-8' />
 		<meta name='mobile-web-app-capable' content='yes' />
 		<meta name='apple-mobile-web-app-capable' content='yes' />
