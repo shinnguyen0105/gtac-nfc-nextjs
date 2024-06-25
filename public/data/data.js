@@ -62,7 +62,7 @@ const members = [
 	{
 		id: 'hoanbt',
 		name: 'Nguyễn Bích Tiến Hoa',
-		email: 'hoanbt6@fe.edu.vn',
+		email: 'HoaNBT6@fe.edu.vn',
 		dateOfBirth: '00/00/0000',
 		phone: '0773 562 567',
 		facebookUrl: 'https://www.facebook.com/profile.php?id=100003340327254',
@@ -77,7 +77,7 @@ const members = [
 	{
 		id: 'anpb',
 		name: 'Phạm Bình An',
-		email: 'anpb2@fe.edu.vn',
+		email: 'AnPB2@fe.edu.vn',
 		dateOfBirth: '00/00/0000',
 		phone: '079 2014 225',
 		facebookUrl: 'https://www.facebook.com/phambinhan0704',
@@ -93,7 +93,7 @@ const members = [
 	{
 		id: 'hainm',
 		name: 'Nguyễn Minh Hải',
-		email: 'hainm24@fe.edu.vn',
+		email: 'HaiNM24@fe.edu.vn',
 		dateOfBirth: '00/00/0000',
 		phone: '0000 000 000',
 		facebookUrl: ' https://www.facebook.com/hainguyentp',
@@ -948,7 +948,7 @@ const members = [
 		{
 		id: 'khoapvd',
 		name: 'Phạm Vũ Đăng Khoa',
-		email: 'khoapvd@gtac.edu.vn',
+		email: 'KhoaPVD@gtac.edu.vn',
 		dateOfBirth: '08/02/2004',
 		phone: '0934 797 204',
 		facebookUrl: 'https://www.facebook.com/phamvdkhoa/',
@@ -963,7 +963,7 @@ const members = [
 	{
 		id: 'hanlt',
 		name: 'Lương Thạch Hãn',
-		email: 'hanlt@gtac.edu.vn',
+		email: 'HanLT@gtac.edu.vn',
 		dateOfBirth: '26/07/2003',
 		phone: '0766 263 948',
 		facebookUrl: 'https://www.facebook.com/han.luong04',
@@ -978,7 +978,7 @@ const members = [
 	{
 		id: 'khanhlb',
 		name: 'Lê Bá Khanh',
-		email: 'khanhlb@gtac.edu.vn',
+		email: 'KhanhLB@gtac.edu.vn',
 		dateOfBirth: '11/04/2003',
 		phone: '0934 885 794',
 		facebookUrl: 'https://www.facebook.com/ba.khanh.710667',
@@ -993,7 +993,7 @@ const members = [
 	{
 		id: 'hungts',
 		name: 'Trần Sỹ Hùng',
-		email: 'hungts@gtac.edu.vn',
+		email: 'HungTS@gtac.edu.vn',
 		dateOfBirth: '20/11/2005',
 		phone: '0982 201 105',
 		facebookUrl: 'https://www.facebook.com/doge.empire.9',
@@ -1008,7 +1008,7 @@ const members = [
 	{
 		id: 'ngocvhb',
 		name: 'Võ Hoàng Bảo Ngọc',
-		email: 'ngocvhb@gtac.edu.vn',
+		email: 'NgocVHB@gtac.edu.vn',
 		dateOfBirth: '06/03/2005',
 		phone: '0914 709 062',
 		facebookUrl: 'https://www.facebook.com/ngoc.vohoangbao.969',
@@ -1023,7 +1023,7 @@ const members = [
 	{
 		id: 'uyenvnp',
 		name: 'Võ Nguyễn Phương Uyên',
-		email: 'uyenvnp@gtac.edu.vn',
+		email: 'UyenVNP@gtac.edu.vn',
 		dateOfBirth: '13/04/2005',
 		phone: '0356 074 612',
 		facebookUrl: 'https://www.facebook.com/100026127662970',
@@ -1038,7 +1038,7 @@ const members = [
 	{
 		id: 'nganttk',
 		name: 'Trần Thị Kim Ngân',
-		email: 'nganttk@gtac.edu.vn',
+		email: 'NganTTK@gtac.edu.vn',
 		dateOfBirth: '21/01/2005',
 		phone: '0905 088 796',
 		facebookUrl: 'https://www.facebook.com/kim.ngann.7',
@@ -1053,7 +1053,7 @@ const members = [
 	{
 		id: 'tailb',
 		name: 'Lâm Bảo Tài',
-		email: 'tailb@gtac.edu.vn',
+		email: 'TaiLB@gtac.edu.vn',
 		dateOfBirth: '23/10/2005',
 		phone: '0333 717 803',
 		facebookUrl: 'https://www.facebook.com/Rim Richard',
@@ -1068,7 +1068,7 @@ const members = [
 	{
 		id: 'nganltk',
 		name: 'Lê Thị Kim Ngân',
-		email: 'nganltk@gtac.edu.vn',
+		email: 'NganLTK@gtac.edu.vn',
 		dateOfBirth: '13/03/2005',
 		phone: '0702 651 849',
 		facebookUrl: 'https://www.facebook.com/nganle05',
@@ -1083,7 +1083,7 @@ const members = [
 	{
 		id: 'huynn',
 		name: 'Nguyễn Nhật Huy',
-		email: 'huynn@gtac.edu.vn',
+		email: 'HuyNN@gtac.edu.vn',
 		dateOfBirth: '02/09/2005',
 		phone: '0911 044 566',
 		facebookUrl: 'https://www.facebook.com/vampirelokety',
