@@ -31,8 +31,6 @@ const Members = () => {
 						))}
 					</div>
 				</div>
-				<br>
-				<br>
 				<div className='mt-5 text-center text-slate-400'>
 					© Copyright owned by Greenwich Teaching Assistant Club - Danang
 					Campus
