@@ -6,7 +6,7 @@ const Members = () => {
 	return (
 		<Page>
 			<Section>
-				<h2 className='text-xl font-semibold text-white'> NFC GTAC MEMBERSHIP CARD </h2>
+				<h2 className='text-xl font-semibold text-white'> GTAC x NFC CARD</h2>
 				<br />
 				<div className='mt-2'>
 					<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
@@ -31,7 +31,8 @@ const Members = () => {
 						))}
 					</div>
 				</div>
-
+				<br>
+				<br>
 				<div className='mt-5 text-center text-slate-400'>
 					© Copyright owned by Greenwich Teaching Assistant Club - Danang
 					Campus
