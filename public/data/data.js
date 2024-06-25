@@ -870,7 +870,6 @@ const members = [
 		bankAccount: '0931914815',
 		image: 'images/',
 	},
-
 	{
 		id: 'quyenpt',
 		name: 'Phan Thùy Quyên',
@@ -886,7 +885,6 @@ const members = [
 		bankAccount: '630013112002',
 		image: 'images/',
 	},
-
 	{
 		id: 'quannm',
 		name: 'Nguyễn Minh Quân',
@@ -902,7 +900,6 @@ const members = [
 		bankAccount: '0867655215',
 		image: 'images/',
 	},
-
 	{
 		id: 'kiettq',
 		name: 'Trương Quốc Kiệt',
@@ -948,7 +945,7 @@ const members = [
 		bankAccount: '06395539101',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'hanlt',
 		name: 'Lương Thạch Hãn',
 		email: 'hanlt@gtac.edu.vn',
@@ -963,7 +960,7 @@ const members = [
 		bankAccount: '9766263948',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'khanhlb',
 		name: 'Lê Bá Khanh',
 		email: 'khanhlb@gtac.edu.vn',
@@ -978,7 +975,7 @@ const members = [
 		bankAccount: '0000187087608',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'hungts',
 		name: 'Trần Sỹ Hùng',
 		email: 'hungts@gtac.edu.vn',
@@ -993,7 +990,7 @@ const members = [
 		bankAccount: '5311595147',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'ngocvhb',
 		name: 'Võ Hoàng Bảo Ngọc',
 		email: 'ngocvhb@gtac.edu.vn',
@@ -1008,22 +1005,7 @@ const members = [
 		bankAccount: '5561291321',
 		image: 'images/',
 	}, 
-{
-		id: 'thaontt',
-		name: 'Nguyễn Trần Thanh Thảo',
-		email: 'thaontt@gtac.edu.vn',
-		dateOfBirth: '18/01/2004',
-		phone: ‘0942208477',
-		facebookUrl: 'https://www.facebook.com/milonguye',
-		instaUrl: 'https://www.instagram.com/_milng_/',
-		linkedInUrl: '',
-		githubUrl: '',
-		behanceUrl: '',
-		bankAccountType: 'Vietcombank',
-		bankAccount: '0161001752694',
-		image: 'images/',
-	}, 
-{
+	{
 		id: 'uyenvnp',
 		name: 'Võ Nguyễn Phương Uyên',
 		email: 'uyenvnp@gtac.edu.vn',
@@ -1038,7 +1020,7 @@ const members = [
 		bankAccount: '5401128503',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'nganttk',
 		name: 'Trần Thị Kim Ngân',
 		email: 'nganttk@gtac.edu.vn',
@@ -1053,7 +1035,7 @@ const members = [
 		bankAccount: '19037869999018',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'tailb',
 		name: 'Lâm Bảo Tài',
 		email: 'tailb@gtac.edu.vn',
@@ -1068,7 +1050,7 @@ const members = [
 		bankAccount: '0333717803',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'nganltk',
 		name: 'Lê Thị Kim Ngân',
 		email: 'nganltk@gtac.edu.vn',
@@ -1083,7 +1065,7 @@ const members = [
 		bankAccount: '130320056',
 		image: 'images/',
 	}, 
-{
+	{
 		id: 'huynn',
 		name: 'Nguyễn Nhật Huy',
 		email: 'huynn@gtac.edu.vn',
