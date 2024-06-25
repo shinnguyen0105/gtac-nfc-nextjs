@@ -1,19 +1,4 @@
 const members = [
-		{
-		id: 'gtac',
-		name: 'Greenwich Teaching Assistant Club',
-		email: 'info@gtac-uog.com',
-		dateOfBirth: '07/08/2021',
-		phone: '0973 087 705',
-		facebookUrl: 'https://www.facebook.com/gtac.uog.dn',
-		instaUrl: '',
-		linkedInUrl: 'https://www.linkedin.com/company/gtac-uog-dn',
-		githubUrl: '',
-		behanceUrl: '',
-		bankAccountType: 'TPbank',
-		bankAccount: '09191767450',
-		image: 'images/',
-	},
 	{
 		id: 'nguyenndh',
 		name: 'Nguyễn Đặng Hà Nguyên',
