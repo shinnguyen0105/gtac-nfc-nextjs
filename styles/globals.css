@@ -25,16 +25,87 @@ input:checked~.dot {
 	/* Adjust the height to your liking */
 	padding: 20px;
 	background-color: #333;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .grid img {
 	height: auto;
 	width: 100%;
 	aspect-ratio: 1 / 1;
+	border-radius: 8px;
+	object-fit: cover;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid img:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 img {
 	width: 100%;
 	height: auto;
 	object-fit: cover;
+}
+
+input {
+	@apply w-full p-3 border rounded-md;
+	background-color: #222;
+	color: #fff;
+	border-color: #555;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+	border-color: #48bb78;
+	box-shadow: 0 0 8px rgba(72, 187, 120, 0.5);
+	outline: none;
+}
+
+h2 {
+	@apply text-2xl font-bold text-center;
+	color: #48bb78;
+}
+
+.grid {
+	@apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6;
+}
+
+.card {
+	background-color: #222;
+	border-radius: 8px;
+	overflow: hidden;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+	@apply w-full h-auto;
+}
+
+.card-content {
+	@apply p-4;
+}
+
+.card-content h3 {
+	@apply text-lg font-semibold text-white;
+}
+
+.card-content p {
+	@apply text-sm text-gray-400;
+}
+
+.footer {
+	@apply mt-5 text-center text-gray-400;
+	font-size: 14px;
+}
+
+.no-results {
+	@apply text-center text-gray-400 mt-4;
+	font-size: 16px;
 }
