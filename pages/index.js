@@ -19,6 +19,17 @@ const Members = () => {
 			<Section>
 				<h2 className='text-xl font-semibold text-white'>GTAC MEMBERCARD</h2>
 				<br />
+				{/* Thanh tìm kiếm */}
+				<div className='mb-4'>
+					<input
+						type='text'
+						placeholder='Search by name, phone, or email'
+						value={searchTerm}
+						onChange={(e) => setSearchTerm(e.target.value)}
+						className='w-full p-2 border border-gray-300 rounded-md text-black'
+					/>
+				</div>
+				{/* Danh sách thành viên */}
 				<div className='mt-2'>
 					<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
 						{filteredMembers.map((member) => (
