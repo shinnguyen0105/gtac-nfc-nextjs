@@ -13,7 +13,7 @@ const Members = () => {
 		member.phone.includes(searchTerm) ||
 		member.email.toLowerCase().includes(searchTerm.toLowerCase())
 	);
-
+	
 	return (
 		<Page>
 			<Section>
