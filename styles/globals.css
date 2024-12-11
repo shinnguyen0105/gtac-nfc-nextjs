@@ -68,10 +68,6 @@ h2 {
 	color: #48bb78;
 }
 
-.grid {
-	@apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6;
-}
-
 .card {
 	background-color: #222;
 	border-radius: 8px;
