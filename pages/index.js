@@ -26,7 +26,7 @@ const Members = () => {
 						placeholder='Search by name, phone, or email'
 						value={searchTerm}
 						onChange={(e) => setSearchTerm(e.target.value)}
-						className='w-full p-2 border border-gray-300 rounded-md text-black'
+						className='w-full p-2 border border-gray-300 rounded-md text-white'
 					/>
 				</div>
 				{/* Danh sách thành viên */}
