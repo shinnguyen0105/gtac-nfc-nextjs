@@ -13,7 +13,7 @@ const Members = () => {
 		member.phone.includes(searchTerm) ||
 		member.email.toLowerCase().includes(searchTerm.toLowerCase())
 	);
-	
+
 	return (
 		<Page>
 			<Section>
@@ -32,29 +32,36 @@ const Members = () => {
 				<br />
 				{/* Danh sách thành viên */}
 				<div className='mt-2'>
-					<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
-						{filteredMembers.map((member) => (
-							<Link key={member.id} href='/[mid]' as={`/${member.id}`}>
-								<div
-									key={member.id}
-									className='rounded overflow-hidden bg-inherit hover:shadow-2xl'
-								>
-									<img
-										className='w-full'
-										src={`images/${member.id}.png`}
-										alt={`${member.name}`}
-									/>
-									<div className='font-bold text-sm mb-2 text-white'>
-										{member.name}
+					{/* Chỉ hiển thị danh sách khi có từ khóa tìm kiếm */}
+					{searchTerm ? (
+						<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
+							{filteredMembers.map((member) => (
+								<Link key={member.id} href='/[mid]' as={`/${member.id}`}>
+									<div
+										key={member.id}
+										className='rounded overflow-hidden bg-inherit hover:shadow-2xl'
+									>
+										<img
+											className='w-full'
+											src={`images/${member.id}.png`}
+											alt={`${member.name}`}
+										/>
+										<div className='font-bold text-sm mb-2 text-white'>
+											{member.name}
+										</div>
+										<p className='text-slate-200 text-xs'>Phone: {member.phone}</p>
+										<p className='text-slate-200 text-xs'>Email: {member.email}</p>
 									</div>
-									<p className='text-slate-200 text-xs'>Phone: {member.phone}</p>
-									<p className='text-slate-200 text-xs'>Email: {member.email}</p>
-								</div>
-							</Link>
-						))}
-					</div>
+								</Link>
+							))}
+						</div>
+					) : (
+						<p className='text-center text-slate-400 mt-4'>
+							Enter a search term to display members.
+						</p>
+					)}
 					{/* Hiển thị thông báo nếu không tìm thấy kết quả */}
-					{filteredMembers.length === 0 && (
+					{searchTerm && filteredMembers.length === 0 && (
 						<p className='text-center text-slate-400 mt-4'>
 							No members found.
 						</p>
