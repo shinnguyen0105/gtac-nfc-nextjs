@@ -29,6 +29,7 @@ const Members = () => {
 						className='w-full p-2 border border-gray-300 rounded-md text-white'
 					/>
 				</div>
+				<br />
 				{/* Danh sách thành viên */}
 				<div className='mt-2'>
 					<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5'>
@@ -59,6 +60,7 @@ const Members = () => {
 						</p>
 					)}
 				</div>
+				<br />
 				<div className='mt-5 text-center text-slate-400'>
 					© Copyright owned by Greenwich Teaching Assistant Club - Danang Campus
 				</div>
