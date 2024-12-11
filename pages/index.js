@@ -47,9 +47,11 @@ const Members = () => {
 										src={`images/${member.id}.png`}
 										alt={`${member.name}`}
 									/>
+									<br />
 									<div className="font-bold text-sm mb-2 text-white">{member.name}</div>
 									<p className="text-slate-200 text-xs">Phone: {member.phone}</p>
 									<p className="text-slate-200 text-xs">Email: {member.email}</p>
+									<br />
 								</a>
 							</Link>
 							))}
