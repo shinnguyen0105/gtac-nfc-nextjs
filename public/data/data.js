@@ -1155,6 +1155,21 @@ const members = [
 		bankAccount: '1038 714 801',
 		image: 'images/',
 	},
+	{
+		id: 'lyptc',
+		name: 'Phan Thị Cẩm Ly',
+		email: 'LyPTC@gtac.edu.vn',
+		dateOfBirth: '21/11/2006',
+		phone: '0775 698 023',
+		facebookUrl: 'https://www.facebook.com/bonvanguyet',
+		instaUrl: 'https://www.instagram.com/yashita_jc/',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'MBbank',
+		bankAccount: '0832 796 295',
+		image: 'images/',
+	},
 ]
 
 export default members;
