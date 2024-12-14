@@ -1170,6 +1170,21 @@ const members = [
 		bankAccount: '0832 796 295',
 		image: 'images/',
 	},
+	{
+		id: 'thaontt1',
+		name: 'Nguyễn Thị Thanh Thảo',
+		email: 'ThaoNTT1@gtac.edu.vn',
+		dateOfBirth: '21/07/2005',
+		phone: '0938 557 527',
+		facebookUrl: 'https://www.facebook.com/thanhthao.sad',
+		instaUrl: 'https://www.instagram.com/tikanii_2107',
+		linkedInUrl: '',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'MBbank',
+		bankAccount: '0938 557 527',
+		image: 'images/',
+	},
 ]
 
 export default members;
