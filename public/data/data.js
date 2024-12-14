@@ -1170,23 +1170,6 @@ const members = [
 		bankAccount: '0832 796 295',
 		image: 'images/',
 	},
-	{/*
-	{
-		id: '',
-		name: '',
-		email: '',
-		dateOfBirth: '00/00/0000',
-		phone: '0000 000 000',
-		facebookUrl: '',
-		instaUrl: '',
-		linkedInUrl: '',
-		githubUrl: '',
-		behanceUrl: '',
-		bankAccountType: '',
-		bankAccount: '0000 0000 0000',
-		image: 'images/',
-	}
-	*/}
 ]
 
 export default members;
