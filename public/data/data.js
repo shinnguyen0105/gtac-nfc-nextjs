@@ -611,7 +611,7 @@ const members = [
 		linkedInUrl: '',
 		githubUrl: '',
 		behanceUrl: '',
-		bankAccountType: 'Viettinbank',
+		bankAccountType: 'Vietinbank',
 		bankAccount: '109 876 138 193',
 		image: 'images/'
 	},
@@ -1226,7 +1226,7 @@ const members = [
 		linkedInUrl: '',
 		githubUrl: '',
 		behanceUrl: '',
-		bankAccountType: 'Viettinbank',
+		bankAccountType: 'VietinBank',
 		bankAccount: '104 600 357 755',
 		image: 'images/',
 	},
