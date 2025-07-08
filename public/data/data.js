@@ -1218,7 +1218,7 @@ const members = [
 	{
 		id: 'linhhh',
 		name: 'Hoàng Hà Linh',
-		email: 'LinHHH@gtac.edu.vn',
+		email: 'LinhHH@gtac.edu.vn',
 		dateOfBirth: '04/07/2005',
 		phone: '0949 357 755',
 		facebookUrl: 'https://www.facebook.com/ichian.42',
