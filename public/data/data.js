@@ -1185,6 +1185,21 @@ const members = [
 		bankAccount: '0938 557 527',
 		image: 'images/',
 	},
+	{
+		id: 'vyvty',
+		name: 'Võ Thục Yến Vy',
+		email: 'VyVTY@gtac.edu.vn',
+		dateOfBirth: '27/07/2005',
+		phone: '0704 653 058',
+		facebookUrl: 'https://www.facebook.com/share/1LTFwr4w4m/',
+		instaUrl: 'https://www.instagram.com/vtivie',
+		linkedInUrl: 'https://www.linkedin.com/in/vo-thuc-yen-vy-0a2222312',
+		githubUrl: '',
+		behanceUrl: '',
+		bankAccountType: 'TPbank',
+		bankAccount: '29 794 620 309',
+		image: 'images/',
+	},
 ]
 
 export default members;
